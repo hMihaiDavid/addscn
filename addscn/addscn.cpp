@@ -120,6 +120,9 @@ VOID AppendNewSectionHeader(PSTR name, DWORD VirtualSize, DWORD Characteristics)
 
 	memset( (PVOID)((UINT_PTR)pView + newSectionHeader->PointerToRawData), 0, newSectionHeader->SizeOfRawData);
 
+	wcout	<< L"You can proceed to copy your raw section data to file offset 0x" << hex << newSectionHeader->PointerToRawData
+			<< L" up to a length of 0x" << hex << VirtualSize << endl;
+
 }
 
 int wmain(int argc, wchar_t *argv[])
