@@ -128,7 +128,7 @@ int wmain(int argc, wchar_t *argv[])
 		wcout << L"USAGE: " << argv[0] << L" <path to PE file> <section name> <VirtualSize> <Characteristics>" << endl << endl
 
 			<< L"VirtualSize can be in decimal (ex: 5021) or in hex (ex. 0x12c)" << endl
-			<< L"Characteristics can either a hex DWORD like this: 0xC0000040 " << endl
+			<< L"Characteristics can either be a hex DWORD like this: 0xC0000040 " << endl
 			<< L"or the strings \"text\", \"data\" or \"rdata\" which mean: " << endl << endl
 
 			<< L"text:  0x60000020: IMAGE_SCN_CNT_CODE | IMAGE_SCN_MEM_EXECUTE | IMAGE_SCN_MEM_READ" << endl
