@@ -28,9 +28,10 @@ rdata: 0x40000040: IMAGE_SCN_CNT_INITIALIZED_DATA | IMAGE_SCN_MEM_READ
 Example:
 ```
 C:\>addscn.exe target_file.exe .TEST 0x231 rdata
-File size in bytes: 448000
-You can proceed to copy your raw section data to file offset 0x6d600 up to a length of 0x231
-New file size in bytes: 6da00
+File size in bytes: 449024
+You can proceed to copy your raw section data to file offset 0x6da00 up to a length of 0x231
+The section will be mapped at RVA 0x73000
+New file size in bytes: 6de00
 Operation completed successfully.
 
 ```
